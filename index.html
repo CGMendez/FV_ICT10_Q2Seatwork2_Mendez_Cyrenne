@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Student Grade Calculator</title>
+
+    <style>
+        h1{
+         text-align: center;
+        }
+
+        .container {
+            background-color: #800000;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            border-radius: 20px;
+            padding: 20px;
+            width: 35%;
+            margin: 40px auto;
+            
+        }
+
+        input[type="text"]{
+            width: 150px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input[type="number"]{
+            width: 150px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        button{
+            justify-content: center;
+            align-items: center;
+            text-decoration: black;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Student Grade Calculator</h1>
+    <br>
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" placeholder="Enter your first name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" placeholder="Enter your last name" required>
+            </div>
+        </form>
+    
+
+    <h2>Input your Grades:</h2>
+             <div class="form-group">
+                <label for="English">English</label>
+                <input type="text" id="science" placeholder="Enter your Grade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Math">Math</label>
+                <input type="text" id="math" placeholder="Enter your Grade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="English">English</label>
+                <input type="text" id="english" placeholder="Enter your Grade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Filipino">Filipino</label>
+                <input type="text" id="filipino" placeholder="Enter your Grade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ict">ICT</label>
+                <input type="text" id="ICT" placeholder="Enter your Grade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="PE">PE</label>
+                <input type="text" id="pe" placeholder="Enter your Grade" required>
+            </div>
+
+            <br>
+            <button type="button" id="gwa" py-click="general_weighted_average">Calculate GWA</button>
+            <button type="button" id="clear_info" py-click="reset_btn">Reset</button>
+        </div>
+</div>
+    <div id="output"></div>
+   
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
